@@ -3,160 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>害虫レスキュー隊 | ゴキブリ駆除2,980円〜最短15分急行</title>
+    <title>蓄電池の評判・口コミ解説LP</title>
     <style>
-        :root {
-            --main-color: #003366; /* 信頼の濃紺 */
-            --accent-color: #ffcc00; /* 緊急のイエロー */
-            --point-color: #d32f2f; /* 強調の赤 */
-            --text-color: #333;
-            --bg-light: #f4f7f9;
+        /* 全体のデザイン設定 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f4f7f8;
+            margin: 0;
+            padding: 0;
         }
 
-        body {
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-            margin: 0; padding: 0; color: var(--text-color); line-height: 1.8; overflow-x: hidden;
+        /* コンテナ（中央寄せ） */
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px 30px;
+            box-sizing: border-box;
         }
 
         /* ヘッダー */
         header {
-            background: #fff; padding: 10px 5%; display: flex; justify-content: space-between; align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;
+            background: #fff;
+            border-bottom: 3px solid #ff9900;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .logo-area h2 { margin: 0; font-size: 1.5rem; color: var(--main-color); border-left: 5px solid var(--accent-color); padding-left: 10px; }
-        .header-info { text-align: right; }
-        .header-tel { font-size: 1.4rem; font-weight: bold; color: var(--point-color); text-decoration: none; }
 
-        /* メインビジュアル */
-        .hero {
-            background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80'); /* 清潔な部屋のイメージ */
-            background-size: cover; background-position: center;
-            color: #fff; padding: 80px 5%; text-align: center;
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0 15px;
         }
-        .hero-badge { background: var(--accent-color); color: #000; display: inline-block; padding: 5px 20px; font-weight: bold; border-radius: 50px; margin-bottom: 20px; }
-        .hero h1 { font-size: 2.8rem; margin: 0 0 20px; line-height: 1.3; }
-        .hero-price { font-size: 1.5rem; margin-bottom: 30px; }
-        .hero-price span { font-size: 4rem; color: var(--accent-color); font-weight: bold; text-shadow: 2px 2px 0 #000; }
 
-        /* 特徴セクション */
-        .features { padding: 60px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; background: #fff; }
-        .feature-card { background: var(--bg-light); padding: 30px; border-radius: 15px; text-align: center; border-bottom: 5px solid var(--accent-color); }
-        .feature-card h3 { color: var(--main-color); font-size: 1.4rem; }
-        .feature-icon { font-size: 3rem; margin-bottom: 10px; }
-
-        /* お客様の声セクション */
-        .voice { background: var(--bg-light); padding: 60px 5%; }
-        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--main-color); }
-        .voice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .voice-item { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 3px 15px rgba(0,0,0,0.05); }
-        .voice-meta { font-size: 0.85rem; color: #666; margin-bottom: 10px; display: flex; justify-content: space-between; }
-        .stars { color: var(--accent-color); }
-
-        /* 料金・CTAエリア */
-        .cta-area { background: var(--main-color); color: #fff; padding: 60px 5%; text-align: center; }
-        .cta-btn { 
-            display: inline-block; background: var(--accent-color); color: #000; padding: 25px 50px; 
-            font-size: 2rem; font-weight: bold; text-decoration: none; border-radius: 100px; 
-            box-shadow: 0 10px 0 #b28900; transition: all 0.2s; margin-top: 20px;
+        .logo { font-weight: bold; color: #ff9900; font-size: 1.2rem; }
+        .contact-btn {
+            background: #ff9900;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
         }
-        .cta-btn:active { transform: translateY(5px); box-shadow: 0 5px 0 #b28900; }
 
-        /* 会社概要テーブル */
-        .info-table { width: 100%; max-width: 800px; margin: 40px auto; border-collapse: collapse; background: #fff; }
-        .info-table th, .info-table td { border: 1px solid #ddd; padding: 15px; text-align: left; }
-        .info-table th { background: #eee; width: 30%; }
+        /* 記事タイトル */
+        h1 {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            margin-top: 20px;
+            color: #111;
+        }
 
-        footer { background: #333; color: #fff; text-align: center; padding: 30px; font-size: 0.8rem; }
+        .post-meta { font-size: 0.8rem; color: #888; margin-bottom: 20px; }
 
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 1.8rem; }
-            .hero-price span { font-size: 2.5rem; }
-            .cta-btn { font-size: 1.5rem; width: 90%; padding: 20px 0; }
+        /* 画像のレスポンシブ対応 */
+        img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        /* CTA（見積もりボックス） */
+        .cta-box {
+            background: #fff9e6;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #d48806;
+        }
+
+        .cta-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .option-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .option-label {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+        }
+
+        .btn-submit {
+            background: #ff4d4f;
+            color: white;
+            border: none;
+            padding: 15px 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #cf1322;
+        }
+
+        .btn-submit:active { transform: translateY(2px); box-shadow: none; }
+
+        /* 見出しデザイン */
+        h2 {
+            border-left: 8px solid #ff9900;
+            background: #f9f9f9;
+            padding: 10px 15px;
+            margin-top: 40px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            border-bottom: 2px solid #ff9900;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        /* 口コミ風のボックス */
+        .review-box {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .good { background-color: #e6f7ff; border: 1px solid #91d5ff; }
+        .bad { background-color: #fff1f0; border: 1px solid #ffa39e; }
+
+        /* 目次 */
+        .toc {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* スマホ対応 */
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            h1 { font-size: 1.3rem; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-area">
-        <h2>害虫レスキュー隊</h2>
-    </div>
-    <div class="header-info">
-        <div style="font-size: 0.7rem;">24時間365日受付・大阪全域対応</div>
-        <a href="tel:05035280140" class="header-tel">📞 050-3528-0140</a>
+    <div class="header-inner">
+        <div class="logo">ソーラー比較ナビ</div>
+        <a href="#quote" class="contact-btn">無料見積もり</a>
     </div>
 </header>
 
-<section class="hero">
-    <div class="hero-badge">現地調査・お見積もり0円</div>
-    <h1>ゴキブリのトラブル<br>プロの技術で徹底根絶！</h1>
-    <div class="hero-price">
-        地域最安値に挑戦中！ <br>
-        <span>2,980</span> 円〜(税込)
-    </div>
-    <p>最短15分で急行！深夜・早朝のSOSもお任せください。</p>
-    <a href="tel:05035280140" class="cta-btn">今すぐ電話で無料相談</a>
-</section>
+<div class="container">
+    <article>
+        <p class="post-meta">公開日：2026年2月10日</p>
+        <h1>ステップハウスは怪しい？蓄電池の評判・口コミと失敗しないための注意点を徹底解説</h1>
+        
+        <div style="background:#ddd; height:200px; display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
+            [メインビジュアル画像]
+        </div>
 
-<section class="features">
-    <div class="feature-card">
-        <div class="feature-icon">⏱</div>
-        <h3>業界最速クラスの対応</h3>
-        <p>大阪府内に多数のスタッフが待機。お電話から最短15分で現場へ駆けつけます。</p>
-    </div>
-    <div class="feature-card">
-        <div class="feature-icon">🛡️</div>
-        <h3>再発防止を徹底</h3>
-        <p>今いる害虫の駆除はもちろん、侵入経路を完全に封鎖。最大5年の保証付きで安心。</p>
-    </div>
-    <div class="feature-card">
-        <div class="feature-icon">💰</div>
-        <h3>明朗会計をお約束</h3>
-        <p>作業前に必ずお見積もりを提示。お客様の承諾なしに追加費用が発生することはありません。</p>
-    </div>
-</section>
+        <p>「訪問販売でステップハウスの提案を受けたけど、この価格は適正？」という相談が増えています。この記事では、業界の専門家が中立な立場で同社の評判を分析しました。</p>
 
-<section class="voice">
-    <h2 class="section-title">ご利用者様のリアルな声</h2>
-    <div class="voice-grid">
-        <div class="voice-item">
-            <div class="voice-meta"><span>大阪市北区 A様</span><span class="stars">★★★★★</span></div>
-            <p><strong>「夜中の絶望から救われました」</strong><br>キッチンで巨大なものに遭遇。パニックで電話しましたが、すぐ来てくれて駆除後の清掃まで丁寧でした。</p>
+        <div class="toc">
+            <strong>目次</strong>
+            <ul>
+                <li><a href="#sec1">ステップハウスってどんな会社？</a></li>
+                <li><a href="#sec2">リアルな評判・口コミ</a></li>
+                <li><a href="#quote">失敗しないための見積もり比較</a></li>
+            </ul>
         </div>
-        <div class="voice-item">
-            <div class="voice-meta"><span>吹田市 S様</span><span class="stars">★★★★★</span></div>
-            <p><strong>「安くてもプロの仕事！」</strong><br>2,980円〜という価格に惹かれました。安いのに調査が細かく、どこから入ってきたか特定してくれました。</p>
-        </div>
-        <div class="voice-item">
-            <div class="voice-meta"><span>豊中市 M様</span><span class="stars">★★★★★</span></div>
-            <p><strong>「子供にも安心な薬剤」</strong><br>赤ちゃんがいるので薬剤が心配でしたが、人体に影響の少ないものを選んでくれました。説明も誠実でした。</p>
-        </div>
-        <div class="voice-item">
-            <div class="voice-meta"><span>枚方市 K様</span><span class="stars">★★★★★</span></div>
-            <p><strong>「店舗の定期管理を依頼」</strong><br>飲食店を経営しており、予防のために依頼。施工以来、一度も見かけていません。もっと早く頼めばよかった。</p>
-        </div>
-        </div>
-</section>
 
-<section class="cta-area">
-    <h2>まずは無料診断・お見積もりから</h2>
-    <p>無理な営業は一切いたしません。安心してお問い合わせください。</p>
-    <a href="tel:05035280140" class="cta-btn">☎ 050-3528-0140</a>
-    <p style="margin-top: 15px;">【年中無休・24時間受付中】</p>
-</section>
+        <div class="cta-box" id="quote">
+            <div class="cta-title">▼ あなたの家の適正価格をチェック ▼</div>
+            <div class="cta-form">
+                <div class="option-group">
+                    <label class="option-label"><input type="radio" name="item"> 太陽光＋蓄電池</label>
+                    <label class="option-label"><input type="radio" name="item"> 蓄電池のみ</label>
+                </div>
+                <button class="btn-submit">次へ進む (無料)</button>
+            </div>
+            <p style="font-size: 0.7rem; color: #666; margin-top:10px;">※しつこい営業電話は一切ありません</p>
+        </div>
 
-<section style="padding: 60px 5%;">
-    <h2 class="section-title">運営会社</h2>
-    <table class="info-table">
-        <tr><th>運営会社</th><td>株式会社Re:birth</td></tr>
-        <tr><th>所在地</th><td>〒530-0035 大阪府大阪市北区同心２丁目１３ー１８ ５０２</td></tr>
-        <tr><th>電話番号</th><td>050-3528-0140</td></tr>
-        <tr><th>事業内容</th><td>害虫・害獣の駆除および再発防止施工</td></tr>
-    </table>
-</section>
+        <h2 id="sec1">ステップハウスってどんな会社？</h2>
+        <p>株式会社StepHouseは、東京都渋谷区に本社を置く蓄電池・太陽光発電の販売施工会社です。全国に拠点を展開しており、特に蓄電池の販売実績では国内トップクラスを誇ります。</p>
+
+        <h2 id="sec2">リアルな評判・口コミ</h2>
+        
+        <div class="review-box good">
+            <h3>◎ 良い口コミ</h3>
+            <ul>
+                <li>光熱費のシミュレーションを細かく出してくれた。</li>
+                <li>設置後のアフターフォローが迅速だった。</li>
+            </ul>
+        </div>
+
+        <div class="review-box bad">
+            <h3>× 悪い口コミ</h3>
+            <ul>
+                <li>他社と比較したら、見積もり価格が高かった。</li>
+                <li>「今日契約すれば安くなる」と即決を迫られた。</li>
+            </ul>
+        </div>
+
+        <h2>結論：必ず複数社で比較を</h2>
+        <p>蓄電池は非常に高価な買い物です。1社だけの提案で決めず、必ず「相見積もり」を取るようにしましょう。それだけで数十万円安くなるケースも珍しくありません。</p>
+
+    </article>
+</div>
 
 <footer>
-    &copy; 2024 害虫レスキュー隊 (株式会社Re:birth) All Rights Reserved.
+    <p>&copy; 2026 ソーラー比較ナビ All Rights Reserved.</p>
 </footer>
 
 </body>
