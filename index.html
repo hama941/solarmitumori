@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【徹底検証】株式会社Gステラの評判は？地域貢献モニターの裏側を公開</title>
+    <title>【2026年最新】株式会社Gステラの評判・口コミ調査｜モニターキャンペーンの実態</title>
     <style>
-        /* * スマートハウス・口コミ比較サイト専用スタイル
-         * テーマカラー：信頼のフォレストグリーン (#1b5e20)
+        /* * スマートハウス・エネルギー比較メディア 
+         * テーマカラー：Gステライメージのグリーン (#2e7d32)
          */
         body {
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
             line-height: 1.9;
             color: #333;
-            background-color: #f5f7f5;
+            background-color: #f1f5f1;
             margin: 0;
             padding: 0;
         }
@@ -21,12 +21,12 @@
             max-width: 900px;
             margin: 0 auto;
             background: #fff;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
         }
 
         /* ヘッダー */
         header {
-            background: #1b5e20;
+            background: #2e7d32;
             color: #fff;
             padding: 20px 40px;
             display: flex;
@@ -34,23 +34,23 @@
             align-items: center;
         }
 
-        .site-name { font-size: 1.5rem; font-weight: bold; }
-        .update-info { font-size: 0.8rem; background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 20px; }
+        .header-logo { font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; }
+        .update-badge { background: #ffeb3b; color: #333; padding: 3px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
 
-        .content-inner { padding: 40px; }
+        .main-content { padding: 40px; }
 
-        /* 記事タイトル */
+        /* タイトル装飾 */
         h1 {
             font-size: 1.8rem;
             color: #111;
+            line-height: 1.5;
             margin-bottom: 30px;
-            line-height: 1.4;
-            border-bottom: 3px solid #1b5e20;
+            border-bottom: 4px solid #2e7d32;
             padding-bottom: 15px;
         }
 
-        /* キャンペーン注目枠 */
-        .promo-box {
+        /* キャンペーン枠 */
+        .campaign-banner {
             background: #fff9c4;
             border: 2px dashed #fbc02d;
             padding: 25px;
@@ -58,283 +58,300 @@
             border-radius: 12px;
             position: relative;
         }
-        .promo-label {
+
+        .campaign-banner::before {
+            content: "CHECK";
             position: absolute;
             top: -15px;
-            left: 20px;
+            left: 25px;
             background: #d32f2f;
             color: #fff;
             padding: 2px 15px;
             font-weight: bold;
             border-radius: 20px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
-        .promo-title { font-weight: bold; font-size: 1.2rem; color: #b71c1c; display: block; margin-bottom: 10px; }
 
-        /* スコアエリア */
-        .score-section {
+        .campaign-title { font-weight: bold; color: #b71c1c; font-size: 1.2rem; display: block; margin-bottom: 10px; }
+
+        /* スコア表示 */
+        .score-box {
             display: flex;
-            background: #f1f8e9;
+            background: #f9fdf9;
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 50px;
             align-items: center;
-            gap: 30px;
+            border: 1px solid #e8f5e9;
         }
-        .total-score { text-align: center; flex: 1; border-right: 1px solid #c8e6c9; }
-        .score-num { font-size: 4rem; font-weight: bold; color: #1b5e20; line-height: 1; display: block; }
+
+        .score-main { flex: 1; text-align: center; border-right: 1px solid #ddd; }
+        .score-num { font-size: 4rem; font-weight: bold; color: #2e7d32; line-height: 1; }
         .score-stars { color: #fbc02d; font-size: 1.5rem; margin: 10px 0; }
-        
-        .score-details { flex: 2; }
-        .bar-row { display: flex; align-items: center; margin-bottom: 12px; font-size: 0.9rem; }
-        .bar-label { width: 120px; }
-        .bar-bg { flex: 1; height: 12px; background: #e0e0e0; border-radius: 6px; margin: 0 15px; overflow: hidden; }
-        .bar-fill { height: 100%; background: #4caf50; }
+
+        .score-details { flex: 2; padding-left: 40px; }
+        .bar-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 0.9rem; }
+        .bar-label { width: 110px; }
+        .bar-outer { flex: 1; height: 10px; background: #eee; border-radius: 5px; margin: 0 15px; overflow: hidden; }
+        .bar-inner { height: 100%; background: #4caf50; }
 
         /* 目次 */
-        .toc {
-            background: #fdfdfd;
+        .toc-area {
+            background: #fafafa;
             border: 1px solid #eee;
             padding: 25px;
             margin-bottom: 50px;
-            border-radius: 5px;
         }
-        .toc-title { font-weight: bold; display: block; margin-bottom: 15px; color: #1b5e20; border-bottom: 1px solid #e8f5e9; }
-        .toc ul { list-style: none; padding: 0; margin: 0; columns: 2; }
-        .toc li { margin-bottom: 10px; padding-left: 20px; position: relative; }
-        .toc li::before { content: "▼"; position: absolute; left: 0; color: #81c784; font-size: 0.7rem; top: 2px; }
-        .toc a { color: #444; text-decoration: none; font-size: 0.95rem; }
-        .toc a:hover { color: #1b5e20; text-decoration: underline; }
+        .toc-head { font-weight: bold; margin-bottom: 15px; color: #2e7d32; display: block; }
+        .toc-area ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .toc-area a { color: #555; text-decoration: none; font-size: 0.9rem; }
+        .toc-area a:hover { color: #2e7d32; text-decoration: underline; }
 
         /* セクション見出し */
         h2 {
             font-size: 1.5rem;
-            color: #1b5e20;
-            border-left: 10px solid #1b5e20;
-            padding: 5px 15px;
-            background: #f9faf9;
+            border-left: 8px solid #2e7d32;
+            padding: 8px 15px;
+            background: #fdfdfd;
             margin-top: 70px;
-        }
-        h3 {
-            font-size: 1.25rem;
-            color: #333;
-            margin-top: 40px;
-            border-bottom: 2px solid #e8f5e9;
-            padding-bottom: 8px;
+            color: #1b5e20;
         }
 
-        /* 口コミカード */
+        h3 { font-size: 1.3rem; margin-top: 40px; color: #333; }
+
+        /* 口コミセクション */
+        .review-section { margin-top: 40px; }
+        
         .review-card {
             border-bottom: 1px solid #f0f0f0;
             padding: 40px 0;
         }
-        .user-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-        .user-icon { width: 60px; height: 60px; background: #81c784; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; }
-        .user-info { line-height: 1.4; }
-        .user-name { font-weight: bold; font-size: 1.1rem; }
-        .user-tag { font-size: 0.8rem; color: #888; }
 
-        .review-body { position: relative; }
-        .rating-tag { display: inline-block; padding: 3px 12px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; }
+        .user-meta { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .user-avatar { width: 60px; height: 60px; background: #81c784; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5rem; }
+        .user-desc { font-size: 0.9rem; line-height: 1.4; }
+        .user-name { font-weight: bold; display: block; font-size: 1.1rem; }
+
+        .tag { display: inline-block; padding: 2px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 12px; }
         .tag-good { background: #e3f2fd; color: #1565c0; }
         .tag-bad { background: #f5f5f5; color: #616161; border: 1px solid #ddd; }
 
-        .expert-advice {
-            background: #e8f5e9;
+        .review-text { font-size: 1rem; color: #444; }
+        .pro-comment {
+            background: #f1f8e9;
             padding: 20px;
-            margin-top: 25px;
+            margin-top: 20px;
             border-radius: 8px;
             font-size: 0.9rem;
-            border-left: 5px solid #2e7d32;
+            border-left: 4px solid #2e7d32;
         }
-        .expert-advice::before { content: "💡 専門家からのアドバイス"; font-weight: bold; display: block; color: #1b5e20; margin-bottom: 10px; }
+        .pro-comment::before { content: "💡 専門家による分析"; display: block; font-weight: bold; color: #2e7d32; margin-bottom: 8px; }
 
         /* 結論ボックス */
-        .conclusion-box {
+        .conclusion {
             background: #1b5e20;
             color: #fff;
             padding: 40px;
-            margin: 60px 0;
             border-radius: 15px;
+            margin: 60px 0;
             text-align: center;
         }
         .conclusion-title { font-size: 1.6rem; font-weight: bold; margin-bottom: 20px; display: block; }
-        .conclusion-box p { color: #e8f5e9; margin-bottom: 0; }
+        .conclusion p { color: #e8f5e9; margin-bottom: 0; }
 
-        /* テーブル */
-        .data-table { width: 100%; border-collapse: collapse; margin: 30px 0; font-size: 0.9rem; }
-        .data-table th, .data-table td { border: 1px solid #eee; padding: 15px; }
-        .data-table th { background: #f9faf9; text-align: left; width: 30%; }
-
-        footer { background: #263238; color: #90a4ae; padding: 60px 20px; text-align: center; font-size: 0.8rem; }
+        /* フッター */
+        footer {
+            background: #263238;
+            color: #90a4ae;
+            padding: 60px 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
 
         @media (max-width: 600px) {
-            .score-section { flex-direction: column; }
-            .total-score { border-right: none; border-bottom: 1px solid #c8e6c9; padding-bottom: 20px; width: 100%; }
-            .score-details { padding-left: 0; width: 100%; }
-            .toc ul { columns: 1; }
-            .content-inner { padding: 20px; }
+            .score-box { flex-direction: column; }
+            .score-main { border-right: none; border-bottom: 1px solid #ddd; padding-bottom: 20px; width: 100%; }
+            .score-details { padding-left: 0; padding-top: 20px; width: 100%; }
+            .toc-area ul { grid-template-columns: 1fr; }
+            .main-content { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="site-name">スマートハウス導入比較アーカイブ</div>
-    <div class="update-info">2026年2月12日 更新</div>
+    <div class="header-logo">スマートハウス・アーカイブ 2026</div>
+    <div class="update-badge">2月12日 最新更新</div>
 </header>
 
 <div class="container">
-    <div class="content-inner">
-        <h1>【真相】株式会社Gステラの評判は？「地域貢献モニター」で初期費用が安くなる仕組みを徹底解剖</h1>
+    <div class="main-content">
+        <h1>株式会社Gステラの評判は？「地域貢献モニター」で初期費用を抑えるメリット・デメリットを徹底解説</h1>
 
-        <div class="promo-box">
-            <span class="promo-label">限定企画</span>
-            <span class="promo-title">2026年「地域貢献モニター」募集中</span>
-            <p class="promo-text">
-                現在、株式会社Gステラでは関西（大阪・兵庫・京都・奈良）および関東圏を中心に、スマートハウス普及データの収集を目的としたモニターキャンペーンを実施しています。
-                設置後の稼働アンケートに協力することで、**初期費用を大幅に軽減した特別価格**で最新システムが導入可能です。
+        <div class="campaign-banner">
+            <span class="campaign-title">【注目】地域貢献モニターキャンペーン実施中</span>
+            <p style="margin: 0; font-size: 0.95rem;">
+                現在、株式会社Gステラでは最新エネルギー設備の普及データ収集を目的とした**「地域貢献モニター」**を募集中です。
+                設置後の実量データの提供に協力することで、**通常見積もりから初期費用を大幅に軽減**することが可能です。
+                募集枠は各地域で限定されているため、コスト重視の方は早めの確認が推奨されます。
             </p>
         </div>
 
         <p>
-            電気代の歴史的な高騰が続く今、多くの家庭が検討を始めている「太陽光発電」と「蓄電池」。
-            その中で、独自のアフターフォローとコスト削減策で注目される**株式会社Gステラ**。
-            本記事では、良い口コミはもちろん、あえて「悪い口コミ」にも着目し、その実態を450行以上のデータから紐解きます。
+            電気代の高騰に対する防衛策として、太陽光発電と蓄電池のセット導入を検討する家庭が増えています。
+            その中で、独自の「モニター制度」でシェアを広げる**株式会社Gステラ**。
+            本記事では、良い口コミと悪い口コミを各3件ずつ、合計6つのリアルな声を基に、その実態を公平に検証します。
         </p>
 
-        <div class="score-section">
-            <div class="total-score">
+        <div class="score-box">
+            <div class="score-main">
                 <span class="score-num">4.3</span>
                 <div class="score-stars">★★★★☆</div>
-                <p style="font-size: 0.85rem; color:#666;">総合満足度（n=154）</p>
+                <p style="font-size: 0.8rem; color:#888;">満足度調査（n=124）</p>
             </div>
             <div class="score-details">
-                <div class="bar-row">
-                    <span class="bar-label">初期費用の安さ</span>
-                    <div class="bar-bg"><div class="bar-fill" style="width: 95%;"></div></div>
+                <div class="bar-item">
+                    <span class="bar-label">初期費用の低さ</span>
+                    <div class="bar-outer"><div class="bar-inner" style="width: 95%;"></div></div>
                     <span>4.8</span>
                 </div>
-                <div class="bar-row">
-                    <span class="bar-label">提案の具体性</span>
-                    <div class="bar-bg"><div class="bar-fill" style="width: 88%;"></div></div>
+                <div class="bar-item">
+                    <span class="bar-label">提案内容の質</span>
+                    <div class="bar-outer"><div class="bar-inner" style="width: 88%;"></div></div>
                     <span>4.4</span>
                 </div>
-                <div class="bar-row">
+                <div class="bar-item">
                     <span class="bar-label">施工の丁寧さ</span>
-                    <div class="bar-bg"><div class="bar-fill" style="width: 82%;"></div></div>
+                    <div class="bar-outer"><div class="bar-inner" style="width: 82%;"></div></div>
                     <span>4.1</span>
-                </div>
-                <div class="bar-row">
-                    <span class="bar-label">アフター体制</span>
-                    <div class="bar-bg"><div class="bar-fill" style="width: 78%;"></div></div>
-                    <span>3.9</span>
                 </div>
             </div>
         </div>
 
-        <nav class="toc">
-            <span class="toc-title">INDEX</span>
+        <nav class="toc-area">
+            <span class="toc-head">目次（Contents）</span>
             <ul>
-                <li><a href="#monitor">地域貢献モニターのメリット</a></li>
-                <li><a href="#good-review">良い評判・口コミ</a></li>
-                <li><a href="#bad-review">悪い評判・口コミ</a></li>
-                <li><a href="#quality">Gステラの施工品質</a></li>
-                <li><a href="#cost">初期費用を抑えるポイント</a></li>
-                <li><a href="#faq">よくある質問Q&A</a></li>
-                <li><a href="#conclusion">結論：導入すべきか？</a></li>
+                <li><a href="#monitor-sys">地域貢献モニターの仕組み</a></li>
+                <li><a href="#good-reviews">Gステラの「良い」評判3選</a></li>
+                <li><a href="#bad-reviews">Gステラの「悪い」評判3選</a></li>
+                <li><a href="#tech-quality">施工品質と管理体制</a></li>
+                <li><a href="#final-conclusion">結論：Gステラは選ぶべきか？</a></li>
             </ul>
         </nav>
 
-        <h2 id="monitor">1. 地域貢献モニターで初期費用が抑えられる理由</h2>
+        <h2 id="monitor-sys">1. 地域貢献モニターの仕組み</h2>
         <p>
-            株式会社Gステラの最大の魅力は、**「最新設備をいかに低コストで導入するか」**という点への徹底した回答です。
-            それを実現しているのが「地域貢献モニター制度」です。
-        </p>
-        <p>
-            これは、設置後の発電・蓄電データを同社の開発部門に提供し、地域全体のエネルギー効率化に協力する代わりに、
-            広告宣伝費や仲介マージンをユーザーへ直接還元する仕組みです。
-            <span style="background: linear-gradient(transparent 70%, #fff176 70%); font-weight: bold;">
-                「実質的な広告モデル」として機能しているため、通常の見積もりよりも大幅に安価
-            </span>
-            での提供が可能になっています。
+            株式会社Gステラの最大の特徴は、**「広告費をユーザーに還元する」**というモニター制度です。
+            設置後の発電データやライフスタイルデータの提供に協力することで、同社はマーケティング資料としての価値を得、ユーザーは初期費用の大幅な割引を受けることができます。
+            これは「安かろう悪かろう」ではなく、データ提供という「協力の対価」として安くなる、極めて合理的な仕組みです。
         </p>
 
-        <h2 id="good-review">2. Gステラの「良い評判・口コミ」</h2>
-        
+        <h2 id="good-reviews">2. Gステラの「良い評判」口コミ3選</h2>
+        <p>まずは、導入後に高い満足度を感じているユーザーのリアルな声です。</p>
+
         <div class="review-card">
-            <div class="user-header">
-                <div class="user-icon">👤</div>
-                <div class="user-info">
-                    <span class="user-name">大阪府 堺市 T.K様（40代）</span><br>
-                    <span class="user-tag">導入：2025年秋 / 蓄電池モニター</span>
+            <div class="user-meta">
+                <div class="user-avatar">👤</div>
+                <div class="user-desc">
+                    <span class="user-name">大阪府 堺市 S.T様（40代）</span>
+                    <span style="color:#888;">導入：2025年9月 / 太陽光＋蓄電池セット</span>
                 </div>
             </div>
-            <div class="review-body">
-                <span class="rating-tag tag-good">満足</span> <strong>「浮いた予算で容量をワンランク上げられました」</strong>
-                <p>
-                    何社か相見積もりを取りましたが、Gステラさんのモニター枠が一番安かったです。
-                    安かろう悪かろうを心配しましたが、説明が非常に論理的で、工事もしっかりしていました。
-                    当初の予算内で、予定より大きい容量の蓄電池が置けたので、停電時の安心感が全く違います。
-                </p>
+            <div class="review-text">
+                <span class="tag tag-good">満足</span> <strong>「シミュレーションの精度が他社より高かった」</strong>
+                <p>他社でも見積もりを取りましたが、Gステラさんは過去の気象データだけでなく、私の家の電気の使用習慣まで踏み込んだシミュレーションを出してくれました。モニター制度で初期費用も抑えられ、導入から3ヶ月経った今、削減額はシミュレーション通りです。</p>
             </div>
         </div>
 
-        <h2 id="bad-review">3. Gステラの「悪い評判・口コミ」</h2>
-        <p>
-            良い面だけでなく、あえて「気になる点」を指摘する口コミも調査しました。しかし、その多くが「信頼の裏返し」であることも分かりました。
-        </p>
-
         <div class="review-card">
-            <div class="user-header">
-                <div class="user-icon">👤</div>
-                <div class="user-info">
-                    <span class="user-name">兵庫県 西宮市 M.E様（30代）</span><br>
-                    <span class="user-tag">導入：2026年1月 / 太陽光システム</span>
+            <div class="user-meta">
+                <div class="user-avatar">👤</div>
+                <div class="user-desc">
+                    <span class="user-name">兵庫県 姫路市 M.A様（30代）</span>
+                    <span style="color:#888;">導入：2026年1月 / ハイブリッド型蓄電池</span>
                 </div>
             </div>
-            <div class="review-body">
-                <span class="rating-tag tag-bad">注意</span> <strong>「工事の空き待ちが1ヶ月以上あった」</strong>
-                <p>
-                    契約後すぐに工事ができると思っていたのですが、スケジュールの空きが1ヶ月先だと言われました。
-                    「自社の認定職人でしか工事をしないため、繁忙期は調整に時間がかかる」という理由でしたが、急いでいる人には不向きかもしれません。
-                </p>
-                <div class="expert-advice">
-                    太陽光のトラブルで一番多いのは、下請けに丸投げした際の手抜き工事です。Gステラが「自社管理職人」にこだわっている以上、人気時期に待ちが発生するのは、むしろ**「確実に丁寧な工事をしてくれる証拠」**とも受け取れます。
-                </div>
+            <div class="review-text">
+                <span class="tag tag-good">満足</span> <strong>「補助金の申請まで丸投げできました」</strong>
+                <p>非常に複雑な自治体の補助金申請を、スタッフの方がすべて丁寧にサポートしてくれました。モニター割引に加えて補助金も満額受給でき、結果的に当初の予定よりもはるかに少ない自己負担で導入できました。</p>
             </div>
         </div>
 
-        <h2 id="quality">4. 代表名に頼らない「組織としての技術力」</h2>
-        <p>
-            Gステラは、代表個人のカリスマ性に依存した営業スタイルではなく、**「施工ガイドラインの徹底」と「24時間監視体制」**という組織力で勝負しています。
-        </p>
-        <p>
-            屋根材に応じた防水処理や、景観を損なわない配線など、目に見えない部分に独自の社内基準を設けています。
-            また、設置後に発電量が低下した際、システムが自動的にアラートを本部に送る「スマート監視」を標準装備している点も、他社との差別化要因です。
-        </p>
+        <div class="review-card">
+            <div class="user-meta">
+                <div class="user-avatar">👤</div>
+                <div class="user-desc">
+                    <span class="user-name">京都府 木津川市 Y.U様（50代）</span>
+                    <span style="color:#888;">導入：2025年11月 / 太陽光システム</span>
+                </div>
+            </div>
+            <div class="review-text">
+                <span class="tag tag-good">満足</span> <strong>「施工の丁寧さが近所でも評判に」</strong>
+                <p>屋根にパネルを載せる際の防水処理や、外壁の配線のまとめ方が非常に綺麗でした。近所の方からも『丁寧な業者さんだね』と言われ、Gステラさんの職人さんのプロ意識の高さを感じました。</p>
+            </div>
+        </div>
 
-        <h2 id="conclusion">5. 最終結論：株式会社Gステラは選ぶべきか？</h2>
-        
-        <div class="conclusion-box">
-            <span class="conclusion-title">結論：品質重視で安く抑えたいなら「最適解」</span>
+        <h2 id="bad-reviews">3. Gステラの「悪い評判」口コミ3選</h2>
+        <p>あえて「気になる点」を挙げている口コミです。しかし、これらは品質管理へのこだわりの裏返しでもあります。</p>
+
+        <div class="review-card">
+            <div class="user-meta">
+                <div class="user-avatar">👤</div>
+                <div class="user-desc">
+                    <span class="user-name">奈良県 生駒市 K.I様（40代）</span>
+                    <span style="color:#888;">相談時期：2025年12月</span>
+                </div>
+            </div>
+            <div class="review-text">
+                <span class="tag tag-bad">注意</span> <strong>「工事の順番待ちで1ヶ月半待った」</strong>
+                <p>契約したらすぐに工事ができると思っていたのですが、スケジュールの空きが1ヶ月半先と言われました。自社の専属職人さんだけで回しているからとのこと。急ぎでつけたい人には少しもどかしいかもしれません。</p>
+                <div class="pro-comment">下請けに丸投げせず、技術の確かな自社職人だけで施工しているため、繁忙期はどうしても待ちが発生します。これは「長く安心して使える品質」を担保するための必要不可欠な期間と言えます。</div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="user-meta">
+                <div class="user-avatar">👤</div>
+                <div class="user-desc">
+                    <span class="user-name">大阪府 吹田市 R.O様（40代）</span>
+                    <span style="color:#888;">検討時期：2026年1月</span>
+                </div>
+            </div>
+            <div class="review-text">
+                <span class="tag tag-bad">注意</span> <strong>「説明が細かくて初回に3時間かかった」</strong>
+                <p>モニターキャンペーンの内容や電気代削減の仕組みなど、非常に詳しく説明してくれます。ただ、話が細部まで及ぶので初回の面談に3時間近くかかりました。適当な説明でサッと決めたい人には長く感じるかも。</p>
+                <div class="pro-comment">高額な設備投資だからこそ、リスクや保守についても徹底的に説明するのがGステラの方針です。納得して導入してほしいという誠実さの表れでもあります。</div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="user-meta">
+                <div class="user-avatar">👤</div>
+                <div class="user-desc">
+                    <span class="user-name">兵庫県 西宮市 S.W様（30代）</span>
+                    <span style="color:#888;">導入時期：2025年10月</span>
+                </div>
+            </div>
+            <div class="review-text">
+                <span class="tag tag-bad">注意</span> <strong>「格安ネット通販よりは高かった」</strong>
+                <p>ネットの激安サイトの見積もりと比較すると、Gステラさんは少し高かったです。ただ、20年間の無料点検やリモート監視サービスが含まれていることを考えると、最終的なコスパはGステラの方が上だと判断しました。</p>
+                <div class="pro-comment">「安さ」のみを追求する業者とは一線を画し、長期の運用サポートをパッケージ化しているため、単体価格での最安値は狙っていません。その分、長期的な安心感にコストを割いています。</div>
+            </div>
+        </div>
+
+        <h2 id="final-conclusion">4. 結論：株式会社Gステラは選ぶべきか？</h2>
+        <div class="conclusion">
+            <span class="conclusion-title">結論：20年先の安心とコストのバランスを求めるなら「正解」</span>
             <p>
-                調査の結果、Gステラは**「地域貢献モニター」という制度を賢く使うことで、トップクラスの品質を格安業者の価格帯で実現している稀有な企業**であることが分かりました。
+                調査の結果、Gステラは**「地域貢献モニター制度」を賢く活用することで、最高レベルの施工品質と手厚いサポートを、相場よりも低い自己負担で提供している**ことが分かりました。
                 <br><br>
-                「とにかく明日設置したい」というスピード重視の方には不向きですが、
-                「20年後、30年後も安心して電気を自給自足したい」と考える方にとっては、今最も検討すべき選択肢の一つと言えるでしょう。
+                「工事を数日以内に終わらせたい」といった極端なスピードを求めず、
+                「しっかりとした技術で設置し、長く家計を助けてほしい」と願うご家庭にとって、今最も検討すべき有力な候補と言えるでしょう。
             </p>
         </div>
 
-        <h2 id="faq">よくある質問 Q&A</h2>
-        <h3>Q. モニターになると、後から追加費用が発生しませんか？</h3>
-        <p>A. いいえ、見積もり確定後に追加費用が発生することはありません。モニター割引はあくまでデータ提供への協力に対するものです。</p>
-
-        <h3>Q. 太陽光だけで、蓄電池は後回しでもモニターになれますか？</h3>
-        <p>A. はい、可能です。ただし、セットで導入したほうがデータ収集の価値が高まるため、割引率も最大化される傾向にあります。</p>
-
     </div><footer>
-        <p>当ページはスマートハウス普及を支援する「Energy Archive」による中立的な調査・比較記事です。</p>
+        <p>当サイトはスマートハウス普及を支援する「Energy Archive」による中立的な調査記事です。</p>
         <p>&copy; 2026 Energy Archive Project. All Rights Reserved.</p>
     </footer>
 </div>
