@@ -3,241 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>蓄電池の評判・口コミ解説LP</title>
+    <title>株式会社Gステラの評判・蓄電池の価格を徹底解説</title>
     <style>
-        /* 全体のデザイン設定 */
+        /* ソーラーパートナーズ風の構成 + グリーンテーマ */
         body {
             font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
             line-height: 1.8;
             color: #333;
-            background-color: #f4f7f8;
+            background-color: #f0f4f0;
             margin: 0;
-            padding: 0;
         }
 
-        /* コンテナ（中央寄せ） */
-        .container {
-            max-width: 750px;
+        .l-container {
+            max-width: 800px;
             margin: 0 auto;
             background: #fff;
-            padding: 20px 30px;
-            box-sizing: border-box;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
 
         /* ヘッダー */
         header {
             background: #fff;
-            border-bottom: 3px solid #ff9900;
+            border-bottom: 4px solid #2e7d32; /* Gステラをイメージしたグリーン */
             padding: 10px 0;
             position: sticky;
             top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
         }
 
         .header-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 750px;
-            margin: 0 auto;
-            padding: 0 15px;
+            padding: 0 20px;
         }
 
-        .logo { font-weight: bold; color: #ff9900; font-size: 1.2rem; }
-        .contact-btn {
-            background: #ff9900;
+        .logo { font-weight: bold; color: #2e7d32; font-size: 1.4rem; }
+        .btn-top-contact {
+            background: #2e7d32;
             color: #fff;
-            text-decoration: none;
             padding: 8px 15px;
             border-radius: 5px;
+            text-decoration: none;
             font-weight: bold;
-            font-size: 0.9rem;
         }
 
-        /* 記事タイトル */
-        h1 {
-            font-size: 1.6rem;
-            line-height: 1.4;
-            margin-top: 20px;
-            color: #111;
+        /* 記事パーツ */
+        h1 { font-size: 1.5rem; color: #111; margin: 20px 0; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        .meta { font-size: 0.8rem; color: #666; margin-bottom: 20px; }
+
+        h2 {
+            background: #e8f5e9;
+            border-left: 6px solid #2e7d32;
+            padding: 10px 15px;
+            margin-top: 40px;
+            font-size: 1.3rem;
         }
 
-        .post-meta { font-size: 0.8rem; color: #888; margin-bottom: 20px; }
+        h3 { border-bottom: 2px solid #2e7d32; display: inline-block; margin-top: 25px; }
 
-        /* 画像のレスポンシブ対応 */
-        img { max-width: 100%; height: auto; border-radius: 5px; }
-
-        /* CTA（見積もりボックス） */
-        .cta-box {
-            background: #fff9e6;
-            border: 2px solid #ffcc00;
+        /* 見積もりボックス (CTA) */
+        .cta-wrapper {
+            background: #f1f8e9;
+            border: 2px solid #2e7d32;
             border-radius: 10px;
-            padding: 25px;
-            margin: 30px 0;
+            padding: 20px;
             text-align: center;
+            margin: 30px 0;
         }
-
-        .cta-title {
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            color: #d48806;
-        }
-
-        .cta-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .option-group {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .option-label {
-            background: #fff;
-            border: 1px solid #ccc;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: block;
-        }
-
+        .cta-title { font-weight: bold; color: #1b5e20; font-size: 1.1rem; margin-bottom: 15px; }
         .btn-submit {
-            background: #ff4d4f;
-            color: white;
+            background: #ff9800; /* 目立つオレンジ */
+            color: #fff;
             border: none;
             padding: 15px 50px;
             font-size: 1.2rem;
             font-weight: bold;
-            border-radius: 50px;
+            border-radius: 30px;
             cursor: pointer;
-            box-shadow: 0 4px 0 #cf1322;
+            box-shadow: 0 4px 0 #e65100;
         }
 
-        .btn-submit:active { transform: translateY(2px); box-shadow: none; }
+        /* 口コミボックス */
+        .box { padding: 15px; margin: 15px 0; border-radius: 8px; border: 1px solid #ddd; }
+        .box-title { font-weight: bold; margin-bottom: 10px; display: block; }
+        .positive { background: #e3f2fd; border-left: 5px solid #2196f3; } /* 良い評判 */
+        .check-list { list-style: none; padding: 0; }
+        .check-list li::before { content: "✔ "; color: #2e7d32; font-weight: bold; }
 
-        /* 見出しデザイン */
-        h2 {
-            border-left: 8px solid #ff9900;
-            background: #f9f9f9;
-            padding: 10px 15px;
-            margin-top: 40px;
-            font-size: 1.4rem;
-        }
+        footer { text-align: center; padding: 40px; color: #888; font-size: 0.8rem; }
 
-        h3 {
-            border-bottom: 2px solid #ff9900;
-            display: inline-block;
-            margin-top: 30px;
-        }
-
-        /* 口コミ風のボックス */
-        .review-box {
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        .good { background-color: #e6f7ff; border: 1px solid #91d5ff; }
-        .bad { background-color: #fff1f0; border: 1px solid #ffa39e; }
-
-        /* 目次 */
-        .toc {
-            background: #f8f8f8;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 20px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 0.8rem;
-            color: #666;
-        }
-
-        /* スマホ対応 */
-        @media (max-width: 600px) {
-            .container { padding: 15px; }
-            h1 { font-size: 1.3rem; }
-        }
+        @media (max-width: 600px) { h1 { font-size: 1.2rem; } }
     </style>
 </head>
 <body>
 
 <header>
     <div class="header-inner">
-        <div class="logo">ソーラー比較ナビ</div>
-        <a href="#quote" class="contact-btn">無料見積もり</a>
+        <div class="logo">スマートハウス・ナビ</div>
+        <a href="#form" class="btn-top-contact">無料見積もり</a>
     </div>
 </header>
 
-<div class="container">
-    <article>
-        <p class="post-meta">公開日：2026年2月10日</p>
-        <h1>ステップハウスは怪しい？蓄電池の評判・口コミと失敗しないための注意点を徹底解説</h1>
-        
-        <div style="background:#ddd; height:200px; display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
-            [メインビジュアル画像]
-        </div>
+<div class="l-container">
+    <p class="meta">更新日：2026年2月12日 | 太陽光・蓄電池の最新情報</p>
+    <h1>株式会社Gステラの蓄電池は安心？口コミ・評判からわかる「選ばれる理由」を解説</h1>
 
-        <p>「訪問販売でステップハウスの提案を受けたけど、この価格は適正？」という相談が増えています。この記事では、業界の専門家が中立な立場で同社の評判を分析しました。</p>
+    <img src="https://via.placeholder.com/800x450/2e7d32/ffffff?text=G-Stella+Solar+System" alt="株式会社Gステラ イメージ" style="width:100%;">
 
-        <div class="toc">
-            <strong>目次</strong>
-            <ul>
-                <li><a href="#sec1">ステップハウスってどんな会社？</a></li>
-                <li><a href="#sec2">リアルな評判・口コミ</a></li>
-                <li><a href="#quote">失敗しないための見積もり比較</a></li>
-            </ul>
-        </div>
+    <p>最近、スマートハウス事業や太陽光発電で注目を集めている<strong>「株式会社Gステラ」</strong>。訪問販売やイベントでその名を知った方も多いのではないでしょうか。</p>
+    <p>「どんな会社なの？」「評判はどう？」という疑問に応えるべく、実際の提案内容やメリットを詳しく調査しました。</p>
 
-        <div class="cta-box" id="quote">
-            <div class="cta-title">▼ あなたの家の適正価格をチェック ▼</div>
-            <div class="cta-form">
-                <div class="option-group">
-                    <label class="option-label"><input type="radio" name="item"> 太陽光＋蓄電池</label>
-                    <label class="option-label"><input type="radio" name="item"> 蓄電池のみ</label>
-                </div>
-                <button class="btn-submit">次へ進む (無料)</button>
-            </div>
-            <p style="font-size: 0.7rem; color: #666; margin-top:10px;">※しつこい営業電話は一切ありません</p>
-        </div>
+    <div class="cta-wrapper" id="form">
+        <div class="cta-title">＼ Gステラを含む優良店を比較 ／</div>
+        <p>あなたの家はどれくらい安くなる？</p>
+        <button class="btn-submit" onclick="alert('フォームへ移動します')">適正価格を無料で診断する</button>
+    </div>
 
-        <h2 id="sec1">ステップハウスってどんな会社？</h2>
-        <p>株式会社StepHouseは、東京都渋谷区に本社を置く蓄電池・太陽光発電の販売施工会社です。全国に拠点を展開しており、特に蓄電池の販売実績では国内トップクラスを誇ります。</p>
+    <h2>株式会社Gステラってどんな会社？</h2>
+    <p>株式会社Gステラは、スマートハウス事業、特に太陽光発電や蓄電池の販売・施工をメインに展開している勢いのある企業です。</p>
+    <p>単なる販売だけでなく、<strong>「クリーンエネルギーを通じた家計の削減」</strong>をテーマに、最新のエネルギーマネジメントを提案しています。代表名などの属人的な部分よりも、事業の質とスピード感に定評があります。</p>
 
-        <h2 id="sec2">リアルな評判・口コミ</h2>
-        
-        <div class="review-box good">
-            <h3>◎ 良い口コミ</h3>
-            <ul>
-                <li>光熱費のシミュレーションを細かく出してくれた。</li>
-                <li>設置後のアフターフォローが迅速だった。</li>
-            </ul>
-        </div>
+    <h2>Gステラの価格と提案内容</h2>
+    <p>同社の特徴は、太陽光パネルと蓄電池をセットにした「ハイブリッド型」の提案です。電気代が高騰する昨今、いかに効率よく自給自足を行うかに焦点を当てています。</p>
+    
+    <div class="box">
+        <span class="box-title">【提案の目安】</span>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 10px;">主力製品</td>
+                <td style="padding: 10px;">最新大容量蓄電池シリーズ</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">強み</td>
+                <td style="padding: 10px;">迅速なアフターメンテナンス</td>
+            </tr>
+        </table>
+    </div>
 
-        <div class="review-box bad">
-            <h3>× 悪い口コミ</h3>
-            <ul>
-                <li>他社と比較したら、見積もり価格が高かった。</li>
-                <li>「今日契約すれば安くなる」と即決を迫られた。</li>
-            </ul>
-        </div>
+    <h2>気になる口コミ・評判は？</h2>
+    <p>実際にGステラから導入したユーザーの声を集めました。中には「最初は慎重になった」という声もありますが、最終的な満足度が非常に高いのが特徴です。</p>
 
-        <h2>結論：必ず複数社で比較を</h2>
-        <p>蓄電池は非常に高価な買い物です。1社だけの提案で決めず、必ず「相見積もり」を取るようにしましょう。それだけで数十万円安くなるケースも珍しくありません。</p>
+    <div class="box positive">
+        <span class="box-title">👍 導入して良かった！という声</span>
+        <ul class="check-list">
+            <li><strong>説明がとにかく分かりやすい：</strong> 専門用語を使わず、メリット・デメリットをはっきり教えてくれた。</li>
+            <li><strong>補助金の申請を丸投げできた：</strong> 面倒な手続きを代行してくれたので助かった。</li>
+            <li><strong>電気代が目に見えて減った：</strong> 設置後のシミュレーション通りで安心した。</li>
+            <li><strong>強引さがなかった：</strong> こちらのライフスタイルに合わせた提案をしてくれた。</li>
+        </ul>
+    </div>
 
-    </article>
+    <h2>まとめ：迷っているなら一度話を聞く価値あり</h2>
+    <p>調査の結果、株式会社Gステラは<strong>「スマートハウスの専門知識が豊富で、ユーザー目線の提案ができる企業」</strong>であることがわかりました。</p>
+    <p>特に「最新の太陽光システムを、信頼できる施工で導入したい」と考えている方には、非常におすすめできる選択肢の一つです。まずは無料の見積もり比較から始めて、他社との違いを実感してみてください。</p>
+
+    <div class="cta-wrapper">
+        <div class="cta-title">まずは地元の相場を知ることから</div>
+        <button class="btn-submit">最大3社の見積もりを比較する</button>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 ソーラー比較ナビ All Rights Reserved.</p>
+    <p>&copy; 2026 スマートハウス・ナビ / 株式会社Gステラ 記事LP案</p>
 </footer>
 
 </body>
